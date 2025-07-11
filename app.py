@@ -352,7 +352,7 @@ class CheatInputWindow(QWidget):
         main_layout.addLayout(back_button_layout)
 
     def open_cheat_results(self):
-        letter = self.input.text().strip()
+        letter = self.input.text()
 
         if not letter:
             QMessageBox.warning(self, "შეცდომა", "გთხოვთ, შეიყვანოთ ასო!")
